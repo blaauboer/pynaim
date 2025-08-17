@@ -13,6 +13,7 @@ CONFIG_FILE = os.path.join(CONFIG_DIR, "config.json")
 
 def load_config() -> dict:
     """Load configuration from a JSON file."""
+    #TODO: Handle empty config file correctly
     if not os.path.exists(CONFIG_DIR):
         os.makedirs(CONFIG_DIR)
     if not os.path.exists(CONFIG_FILE):
@@ -24,6 +25,7 @@ def load_config() -> dict:
 
 def save_config(config: dict):
     """Save configuration to a JSON file."""
+    #TODO: Save config on better suited location
     if not os.path.exists(CONFIG_DIR):
         os.makedirs(CONFIG_DIR)
 
