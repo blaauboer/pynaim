@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pynaim"
-version = "0.1.1"
+version = "0.1.0"
 description = "Python client and CLI for Naim Mu-so 2nd Gen (unofficial)."
 readme = "README.md"
 requires-python = ">=3.9"
