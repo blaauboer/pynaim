@@ -37,7 +37,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         prog="pynaim",
         description="Python CLI tool to control Naim Mu-so 2nd Generation",
-        epilog="Enjoy using the Naim CLI! For more information, visit: github.com.",
+        epilog="Enjoy using the Naim CLI! For more information, visit: https://github.com/blaauboer/pynaim",
     )
 
     parser.add_argument(
