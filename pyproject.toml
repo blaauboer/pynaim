@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pynaim"
+version = "0.1.0"
+description = "Python client and CLI for Naim Mu-so 2nd Gen (unofficial)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "Joeri Blaauboer"}]
+keywords = ["naim", "muso", "audio", "home-assistant", "sse", "asyncio"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Topic :: Multimedia :: Sound/Audio",
+  "Topic :: Home Automation",
+]
+
+[project.urls]
+Homepage = "https://github.com/blaauboer/pynaim"
+Issues = "https://github.com/blaauboer/pynaim/issues"
+
+[project.scripts]
+pynaim = "pynaim.cli:main"
