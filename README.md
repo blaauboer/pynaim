@@ -1,6 +1,8 @@
 # pynaim
 
-`pynaim` is a Python library and CLI tool to control Naim audio devices via their HTTP API. It provides methods for power control, playback, volume adjustment, source selection, and fetching device information.
+`pynaim` is a Python library and CLI tool to control Naim Uniti and Mu-so audio devices via their HTTP API. It provides methods for power control, playback, volume adjustment, source selection, and fetching device information.
+
+The package is tested on an Naim Mu-so 2nd Generation, but should also work on at least some Uniti products. If you run into problems, please let me know.
 
 ---
 
