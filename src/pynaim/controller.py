@@ -89,6 +89,13 @@ class NaimController:
         """Send previous media track command."""
         return self._command("GET", "nowplaying", {"cmd": "prev"})
 
+    # --- Playback modes ---
+    def set_repeat(self, repeat_mode: int):
+        """Set repeat mode. Repeat mode: 0 = off, 1 = track, 2 = all."""
+        if repeat_mode not in (0, 1, 2):
+            raise ValueError("Invalid repeat mode. Use 0, 1, or 2.")
+        return self._command("PUT", "levels/room", {"repeat": repeat_mode})
+
     # --- Volume ---
     def volume_up(self):
         """Send volume up command."""
